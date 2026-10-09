@@ -1,0 +1,26 @@
+device:
+  name: "Living Room Lamp"
+  base_url: "http://192.168.1.10"
+  token: ""  # optional, leave blank if your bridge does not require a token
+  switch_id: 42
+
+schedule:
+  weekday:
+    on: "06:30"
+    off: "22:30"
+  shabbos:
+    on_offset_minutes: 20
+    off_offset_minutes: 45
+  yom_tov:
+    on_offset_minutes: 15
+    off_offset_minutes: 30
+
+calendar:
+  yom_tov_dates:
+    - "2026-09-22"
+    - "2026-09-23"
+  location:
+    name: "New York"
+    latitude: 40.7128
+    longitude: -74.0060
+    timezone: "America/New_York"
